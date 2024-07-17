@@ -1,14 +1,11 @@
 const express = require('express');
 const app = express()
-const { authCheck, authStop } = require('../controllers/auth.controllers');
-
-// auth check
-app.use(authCheck)
+const { checkAuth } = require('../controllers/auth.controllers');
 
 require('./auth.routes')(app);
 
-// auth stop
-app.use(authStop)
+/* auth stop here */
+app.use(checkAuth)
 
-// require('./user.routes')(app); 
+// require('./user.routes')(app);
 module.exports = app 
