@@ -1,11 +1,15 @@
-const express = require('express');
-const app = express()
-const { checkAuth } = require('../controllers/auth.controllers');
+const express = require("express");
+const app = express();
+const { checkAuth, checkAdmin } = require("../controllers/public/auth.js");
 
-require('./auth.routes')(app);
+require("./public/auth.routes")(app);
 
-/* auth stop here */
-app.use(checkAuth)
+/* user and admin permissions work here. */
+app.use(checkAuth);
+require("./user/user.routes")(app);
 
-// require('./user.routes')(app);
-module.exports = app 
+/* only admin permissions work here. */
+app.use(checkAdmin);
+require("./admin/players.routes")(app);
+
+module.exports = app;

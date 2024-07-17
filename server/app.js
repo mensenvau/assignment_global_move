@@ -3,7 +3,7 @@ require('dotenv').config();
  
 const express = require('express');
 const cors = require('cors');
-const controller = require('./controllers/error.controllers'); 
+const controller = require('./controllers/public/error.js'); 
 const app = express();
 
 app.use(cors({ origin: process.env.CORS_ORIGIN.split(","), optionsSuccessStatus: 200 }));
