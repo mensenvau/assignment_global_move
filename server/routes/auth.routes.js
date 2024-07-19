@@ -1,5 +1,5 @@
-const { authRegistration, authLogin, checkUsername } = require("../../controllers/public/auth.js");
-const { loginSchema, registrationSchema } = require("../../schema/auth.schema");
+const { authRegistration, authLogin, checkUsername } = require("../controllers/auth.js");
+const { loginSchema, registrationSchema } = require("../schema/auth.schema.js");
 const { body } = require("uzdev/joi");
 
 module.exports = function (app) {

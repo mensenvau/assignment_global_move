@@ -18,6 +18,7 @@
     "jsonwebtoken": "^9.0.1",
     "mysql2": "^3.6.0",
     "nodemon": "^3.0.1",
+    "prompts": "^2.4.2",
     "uzdev": "^1.4.4"
   }
 }
