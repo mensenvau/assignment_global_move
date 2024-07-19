@@ -5,26 +5,9 @@
 
 ### 🚀  Backend Task: ♟️ Chess Tournament Management system 
 
-Welcome to **♟️ Chess Tournament Management system **! This guide will help you set up, run, and test the application.
+Welcome to **♟️ Chess Tournament Management system**! This guide will help you set up, run, and test the application.
 
 --- 
-
-### 📂 Table of Contents
-
-- [API URL](#api-url)
-- [Global URL for Testing](#global-url-for-testing)
-- [Function Path for Basic Logic](#function-path-for-basic-logic)
-- [Installation Guide](#installation-guide)
-  - [Clone Repository](#clone-repository)
-  - [Install MySQL Environment](#install-mysql-environment)
-  - [Run MySQL DB Script](#run-mysql-db-script)
-  - [Start Server](#start-server)
-- [Shortcomings](#shortcomings)
-- [Questions](#questions)
-- [Installation Video](#installation-video)
-- [Stickers](#stickers)
-
----
 
 ### 🌐 API URL
 
