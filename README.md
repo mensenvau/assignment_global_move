@@ -2,6 +2,9 @@
 
 Welcome to **♟️ Chess Tournament Management system**! This guide will help you set up, run, and test the application.
 This is a task made for the assessments: [More about the task here.](https://globalmove.notion.site/47c1d6a94a5843cb87c79251431c68f4?v=1158b9d6ed0d41a8ae0d3f119d857d0f)
+
+__I use my own `uzdev` npm library to build the API. You can learn more about it here: [uzdev on npm](https://www.npmjs.com/package/uzdev).__
+
 --- 
 
 ### 🌐 API URL
@@ -29,8 +32,8 @@ node node function/system-swiss-tournament.js
 Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/yourusername/your-repository.git
-cd your-repository
+git clone https://github.com/mensenvau/assignment_global_move
+cd assignment_global_move
 ```
 ---
 
@@ -47,24 +50,25 @@ mysql -u root -p < path/to/your-db-script.sql
 Navigate to the server directory and start it:
 
 ```sh
-cd serve
+cd server
 npm install
-npm start
+npm run start
 ```
 
 ---
 
 ### ⚠️ Shortcomings
 
-- The application is currently in beta and may have some bugs.
-- Limited support for older browser versions.
-- Performance issues under heavy load.
+- I didn't have time to write the front-end.
+- Since the Swiss function is recursive, it needs to be optimized for multi-player rounds.
+- Registration and login was not protected by captcha or email/phone message was not sent.
+- Not optimized for caching. 
 
 ---
 
 ### ❓ Questions
 
-For any questions, feel free to reach out: [Support Email](mailto:support@example.com)
+For any questions, feel free to reach out: [Support Email](mailto:balkibumen@gmail.com)
 
 ---
 
@@ -74,7 +78,7 @@ Watch the detailed installation guide: [Installation Video](https://example.com/
 
 ---
 
-## 📢 Join Our Telegram Channel
+## 📢 Join My Telegram Channel
 
 Stay updated and join the conversation: [Telegram Channel](https://t.me/mensenvau)
 
