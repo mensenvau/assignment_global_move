@@ -28,7 +28,7 @@ cd assignment_global_move
 ```
 ---
 
-_You need to update the .env file. You can use the example.env template as a reference._
+_You need to update the .env file. You can use the .env.example template as a reference._
 
 #### 3. Run MySQL DB Script
 
@@ -55,7 +55,7 @@ npm run start
 Find the function to test the basic logic at:
 
 ```sh
-cd server 
+cd server # (on server path)
 node node function/system-swiss-tournament.js
 ```
 

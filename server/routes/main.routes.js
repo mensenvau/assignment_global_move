@@ -12,6 +12,6 @@ require("./user.routes")(app);
 app.use(checkAdmin);
 require("./players.routes")(app);
 require("./tournaments.routes.js")(app);
-
+require("./matches.routes.js")(app);
 
 module.exports = app;

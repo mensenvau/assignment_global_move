@@ -8,6 +8,6 @@ module.exports = function (app) {
   app.get("/admin/players/by", getPlayersByName);
   app.get("/admin/players", getPlayers);
   app.post("/admin/players", body(postPlayerSchema), addPlayer);
+  app.delete("/admin/players", body(delPlayerSchema), delPlayer);
   app.put("/admin/players", body(putPlayerSchema), putPlayer);
-  app.delete("/admin/players",body(delPlayerSchema), delPlayer);
 };

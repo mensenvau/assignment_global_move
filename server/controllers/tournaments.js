@@ -2,7 +2,7 @@ const { execute } = require("uzdev/mysql");
 
 exports.getTournamentById = async (req, res, next) => {
   try {
-    let [tournament, participants] = await Promise.all([execute("select * from tournaments order by tournament_id desc", [req.query.id], 1), execute("select * from tournament_participants order by tournament_id desc", [req.query.id], 1)]);
+    let [tournament, participants] = await Promise.all([execute("select * from tournaments where tournament_id = ?", [req.params.id], 1), execute("select * from tournament_participants where tournament_id = ?", [req.params.id])]);
     if (!tournament) throw new Error("This tournaments does not exist");
     return res.json({ tournament, participants });
   } catch (err) {
@@ -16,10 +16,10 @@ exports.getTournaments = async (req, res, next) => {
     let size = parseInt(req.query?.size) || 10;
     let page = parseInt(req.query?.page) || 0;
 
-    let [cnt, tournaments] = await Promise.all([execute("select * from tournaments order by tournament_id desc", []), execute("select * from tournaments order by tournament_id desc limit ?, ?", [size * page, size])]);
+    let [cnt, tournaments] = await Promise.all([execute("select count(*) as count from tournaments order by tournament_id desc", [], 1), execute("select * from tournaments order by tournament_id desc limit ?, ?", [size * page, size])]);
     if (!tournaments) throw new Error("This tournaments does not exist");
 
-    let count = Math.ceil(cnt.count / Math.min(size, 1)) || 0;
+    let count = Math.ceil(cnt.count / Math.max(size, 1)) || 0;
     return res.json({ tournaments, count, page, size });
   } catch (err) {
     return next(new Error(JSON.stringify({ message: err.message, code: "router" })));
