@@ -19,7 +19,7 @@ _Credential for admin:_
 
 ### 🌍 Global URL for Testing
 
-Test the application globally at: ```https://api-chess.menda.page```
+Test the application globally at: ```https://api.menda.page```
 _Last commit will last 1 month._
 
 ### 🛠️ Installation Guide
@@ -63,8 +63,8 @@ npm test # for unit tests.
 Find the function to test the basic logic at:
 
 ```sh
-cd server # (on server path)
-node function/system-swiss-tournament.js
+cd server # on server path
+node function/test.system-swiss-tournament.js
 ```
 
 ### ⚠️ Shortcomings
