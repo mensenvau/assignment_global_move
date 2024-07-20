@@ -1,9 +1,9 @@
-### 🚀  Backend Task: ♟️ Chess Tournament Management system 
+### 🚀  Backend Task: ♟️ Chess Tournament Management System 
 
 Welcome to **♟️ Chess Tournament Management system**! This guide will help you set up, run, and test the application.
 This is a task made for the assessments: [More about the task here.](https://globalmove.notion.site/47c1d6a94a5843cb87c79251431c68f4?v=1158b9d6ed0d41a8ae0d3f119d857d0f)
 
-__I use my own `uzdev` npm library to build the API. You can learn more about it here: [uzdev on npm](https://www.npmjs.com/package/uzdev).__
+_I use my own `uzdev` npm library to build the API. You can learn more about it here: [uzdev on npm](https://www.npmjs.com/package/uzdev)._
 
 --- 
 
@@ -15,15 +15,6 @@ Download the PDF documentation: [PDF Link](https://example.com/documentation.pdf
 ### 🌍 Global URL for Testing
 
 Test the application globally at: [Global Testing URL](https://api-chess.menda.page)
-
-### 📁 Function Path for Basic Logic
-
-Find the function to test the basic logic at:
-
-```sh
-cd server 
-node node function/system-swiss-tournament.js
-```
 
 ### 🛠️ Installation Guide
 
@@ -37,12 +28,14 @@ cd assignment_global_move
 ```
 ---
 
+_You need to update the .env file. You can use the example.env template as a reference._
+
 #### 3. Run MySQL DB Script
 
 Run the following script to set up your MySQL database:
 
 ```sh
-mysql -u root -p < path/to/your-db-script.sql
+mysql -u root -p < scripts/db-init.sql
 ```
 
 #### 4. Start Server
@@ -56,6 +49,15 @@ npm run start
 ```
 
 ---
+
+### 📁 Function Path for Basic Logic
+
+Find the function to test the basic logic at:
+
+```sh
+cd server 
+node node function/system-swiss-tournament.js
+```
 
 ### ⚠️ Shortcomings
 
