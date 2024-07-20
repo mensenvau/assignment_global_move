@@ -12,9 +12,15 @@ _I use my own `uzdev` npm library to build the API. You can learn more about it 
 Access the API at: [API URL](https://documenter.getpostman.com/view/36794346/2sA3kSnNbN)
 Download the PDF documentation: [PDF Link](https://example.com/documentation.pdf)
 
+_Credential for admin:_
+
+- _username:_ `admin`
+- _password:_ `hi!12345`
+
 ### 🌍 Global URL for Testing
 
-Test the application globally at: [Global Testing URL](https://api-chess.menda.page)
+Test the application globally at: ```https://api-chess.menda.page```
+_Last commit will last 1 month._
 
 ### 🛠️ Installation Guide
 
@@ -32,7 +38,7 @@ _You need to update the .env file. You can use the .env.example template as a re
 
 #### 3. Run MySQL DB Script
 
-Run the following script to set up your MySQL database:
+Run the following script to set up your MySQL database (scripts/db-init.sql):
 
 ```sh
 mysql -u root -p < scripts/db-init.sql
@@ -70,7 +76,7 @@ node node function/system-swiss-tournament.js
 
 ### ❓ Questions
 
-For any questions, feel free to reach out: [Support Email](mailto:balkibumen@gmail.com)
+For any questions, feel free to reach out: ```balkibumen@gmail.com```
 
 ---
 

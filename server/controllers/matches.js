@@ -55,8 +55,7 @@ exports.setResultMatches = async (req, res, next) => {
 
 exports.getLeaderboard = async (req, res, next) => {
   try {
-    let { tournament_id } = req.query;
-    console.log(tournament_id)
+    let { tournament_id } = req.query; 
     let leaderboard = await execute("select * from vw_leaderboard where tournament_id = ?", [tournament_id]);
     return res.json({ leaderboard });
   } catch (err) {
