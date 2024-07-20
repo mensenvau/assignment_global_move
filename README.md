@@ -20,7 +20,6 @@ _Credential for admin:_
 ### 🌍 Global URL for Testing
 
 Test the application globally at: ```https://api.menda.page```
-_Last commit will last 1 month._
 
 ### 🛠️ Installation Guide
 
