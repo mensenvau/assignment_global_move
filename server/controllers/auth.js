@@ -3,7 +3,7 @@ const { execute } = require("uzdev/mysql");
 
 exports.authLogin = async (req, res, next) => {
   try {
-    let { username, password } = req.body;
+    let { username, password } = req.body; 
     let user = await execute("select * from users where username = ? and password = md5(?)", [username, `${password}:${process.env.PASSWORD_SOLD_KEY}`], 1);
     if (!user) throw new Error("Login or password error, such user does not exist");
 

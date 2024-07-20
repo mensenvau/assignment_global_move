@@ -21,3 +21,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Status: active: \n\n - http://localhost:${PORT}\n`);
 });
+
+
+module.exports = app; // Export the app for testing
