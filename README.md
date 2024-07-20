@@ -9,8 +9,8 @@ _I use my own `uzdev` npm library to build the API. You can learn more about it 
 
 ### 🌐 API URL
 
-Access the API at: [API URL](https://documenter.getpostman.com/view/36794346/2sA3kSnNbN)
-Download the PDF documentation: [PDF Link](https://example.com/documentation.pdf)
+- Access the API at: [API URL](https://documenter.getpostman.com/view/36794346/2sA3kSnNbN)
+- Download the PDF documentation: [PDF Link](/scripts/AssignmentGlobalMoveBackendChessTournamentManagementSystem.pdf)
 
 _Credential for admin:_
 
@@ -62,7 +62,7 @@ Find the function to test the basic logic at:
 
 ```sh
 cd server # (on server path)
-node node function/system-swiss-tournament.js
+node function/system-swiss-tournament.js
 ```
 
 ### ⚠️ Shortcomings
