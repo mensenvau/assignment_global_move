@@ -36,7 +36,7 @@ cd assignment_global_move
 
 _You need to update the .env file. You can use the .env.example template as a reference._
 
-#### 3. Run MySQL DB Script
+#### 2. Run MySQL DB Script
 
 Run the following script to set up your MySQL database (scripts/db-init.sql):
 
@@ -44,7 +44,7 @@ Run the following script to set up your MySQL database (scripts/db-init.sql):
 mysql -u root -p < scripts/db-init.sql
 ```
 
-#### 4. Start Server
+#### 3. Start Server
 
 Navigate to the server directory and start it:
 
@@ -52,6 +52,8 @@ Navigate to the server directory and start it:
 cd server
 npm install
 npm run start
+
+npm test # for unit tests.
 ```
 
 ---
