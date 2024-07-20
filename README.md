@@ -66,6 +66,20 @@ cd server # on server path
 node function/test.system-swiss-tournament.js
 ```
 
+_Build match:_ 
+
+To start the next match, the system automatically creates pairings based on the following logic:
+
+Players are initially sorted by rating. In subsequent rounds, they are sorted by their current score.
+Players who have not yet played against each other and have similar scores are paired together.
+The remaining players are paired in a similar manner.
+If there is an odd number of players, the lowest-ranked player who has not yet received a bye will get one, earning 1 point to advance to the next stage.
+
+The next round cannot be generated until the results of the previous round are finalized. Additionally, a round number cannot be generated if Log2(Player Count) exceeds a manageable size.
+
+The process is recursive to ensure proper sorting and pairing, though this approach may become inefficient if the number of players is very large.
+
+
 ### ⚠️ Shortcomings
 
 - I didn't have time to write the front-end.
