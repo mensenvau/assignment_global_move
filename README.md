@@ -84,7 +84,7 @@ For any questions, feel free to reach out: ```balkibumen@gmail.com```
 
 ### 🎥 Installation Video
 
-Watch the detailed installation guide: [Installation Video](https://example.com/installation-video)
+Watch the detailed installation guide: [Installation Video](https://www.youtube.com/watch?v=324Cq_Y02Z4)
 
 ---
 
