@@ -48,11 +48,13 @@ exports.checkAuth = (req, res, next) => {
       req.role_code = req.user?.role_code;
 
       if (!req.user || !req.user_id) throw new Error("Invalid token");
+      next();
+    } else {
+      throw new Error("Invalid token");
     }
   } catch (err) {
-    return next(new Error(JSON.stringify({ message: err.message, code: "router" })));
+    return res.status(401).send(err?.message);
   }
-  next();
 };
 
 exports.checkAdmin = (req, res, next) => {
